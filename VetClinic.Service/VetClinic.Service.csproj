@@ -8,10 +8,15 @@
 
     <ItemGroup>
         <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="8.0.4"/>
+        <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="9.0.0-rc.2" />
         <PackageReference Include="Serilog.AspNetCore" Version="8.0.3" />
         <PackageReference Include="Serilog.Enrichers.CorrelationId" Version="3.0.1" />
         <PackageReference Include="Serilog.Expressions" Version="5.0.1-dev-00182" />
         <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0"/>
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="VetClinic.DataAccess\Entities\" />
     </ItemGroup>
 
 </Project>
