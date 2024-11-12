@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations.Schema;
 
-namespace VetClinic.Service.VetClinic.DataAccess.Entities;
+namespace VetClinic.DataAccess.Entities;
 
 [Table("medical_records")]
 public class MedicalRecord

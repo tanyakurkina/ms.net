@@ -1,4 +1,4 @@
-﻿namespace VetClinic.Service.VetClinic.DataAccess.Entities;
+﻿namespace VetClinic.DataAccess.Entities;
 
 public class BaseEntity
 {

@@ -2,6 +2,8 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VetClinic.Service", "VetClinic.Service\VetClinic.Service.csproj", "{AC94F759-DB39-44E0-9E85-0333FDC35AA6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VetClinic.DataAccess", "VetClinic.DataAccess\VetClinic.DataAccess.csproj", "{9F607B4E-D1A0-492F-A3CB-000B93C02471}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +14,9 @@ Global
 		{AC94F759-DB39-44E0-9E85-0333FDC35AA6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AC94F759-DB39-44E0-9E85-0333FDC35AA6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AC94F759-DB39-44E0-9E85-0333FDC35AA6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9F607B4E-D1A0-492F-A3CB-000B93C02471}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9F607B4E-D1A0-492F-A3CB-000B93C02471}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9F607B4E-D1A0-492F-A3CB-000B93C02471}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9F607B4E-D1A0-492F-A3CB-000B93C02471}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
