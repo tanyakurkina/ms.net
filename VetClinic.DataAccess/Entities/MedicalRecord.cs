@@ -3,7 +3,7 @@
 namespace VetClinic.DataAccess.Entities;
 
 [Table("medical_records")]
-public class MedicalRecord
+public class MedicalRecord : BaseEntity
 {
     public DateTime RecordDate { get; set; }
     
@@ -13,6 +13,6 @@ public class MedicalRecord
     
     public int PetId{ get; set; }
     
-    [ForeignKey("PetId")]
+    
     public Pet Pet { get; set; }
 }

@@ -9,6 +9,9 @@ public class Appointment : BaseEntity
     
     public int UserId { get; set; }
     
-    [ForeignKey("UserId")]
     public User User { get; set; }
+    
+    public List<Service> Services { get; set; }
+    
+    public List<Payment> Payments { get; set; }
 }

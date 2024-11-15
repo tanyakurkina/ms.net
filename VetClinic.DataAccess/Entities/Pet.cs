@@ -17,6 +17,7 @@ public class Pet : BaseEntity
     
     public int UserId { get; set; }
     
-    [ForeignKey("UserId")]
     public User User { get; set; }
+    
+    public List<MedicalRecord> MedicalRecords { get; set; }
 }

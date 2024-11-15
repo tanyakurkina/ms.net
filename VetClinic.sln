@@ -4,6 +4,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VetClinic.Service", "VetCli
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SolutionFolder1", "SolutionFolder1", "{B0450741-C97B-4A0C-8A0B-DA8063E99547}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VetClinic.DataAccess", "VetClinic.DataAccess\VetClinic.DataAccess.csproj", "{E60E2B7C-1026-48A1-81F1-A84FF499060F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -14,5 +16,9 @@ Global
 		{AC94F759-DB39-44E0-9E85-0333FDC35AA6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AC94F759-DB39-44E0-9E85-0333FDC35AA6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AC94F759-DB39-44E0-9E85-0333FDC35AA6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E60E2B7C-1026-48A1-81F1-A84FF499060F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E60E2B7C-1026-48A1-81F1-A84FF499060F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E60E2B7C-1026-48A1-81F1-A84FF499060F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E60E2B7C-1026-48A1-81F1-A84FF499060F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

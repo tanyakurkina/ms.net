@@ -2,17 +2,16 @@
 
 namespace VetClinic.DataAccess.Entities;
 
-[Table("payments")]
-public class Payment
+[Table("services")]
+public class Service : BaseEntity
 {
-    public DateTime PaymentDate { get; set; }
+    public string ServiceName { get; set; }
     
-    public int Amount { get; set; }
+    public int Price { get; set; }
     
-    public string PaymentMethod { get; set; }
+    public string Description { get; set; }
     
     public int AppointmentId{ get; set; }
     
-    [ForeignKey("AppointmentId")]
     public Appointment Appointment { get; set; }
 }

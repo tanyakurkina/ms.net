@@ -15,7 +15,6 @@ public class User : BaseEntity
     
     public int RoleId { get; set; }
     
-    [ForeignKey("RoleId")]
     public Role Role { get; set; }
     
     public List<Appointment> Appointments { get; set; }
