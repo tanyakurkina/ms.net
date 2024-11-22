@@ -245,6 +245,10 @@ namespace VetClinic.DataAccess.Migrations
                     b.Property<Guid>("ExternalId")
                         .HasColumnType("uuid");
 
+                    b.Property<string>("HashPassword")
+                        .IsRequired()
+                        .HasColumnType("text");
+
                     b.Property<DateTime>("ModificationTime")
                         .HasColumnType("timestamp with time zone");
 

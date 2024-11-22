@@ -12,7 +12,7 @@ using VetClinic.DataAccess;
 namespace VetClinic.DataAccess.Migrations
 {
     [DbContext(typeof(VetClinicDbContext))]
-    [Migration("20241115130154_InitialCreate")]
+    [Migration("20241122181442_InitialCreate")]
     partial class InitialCreate
     {
         /// <inheritdoc />
@@ -247,6 +247,10 @@ namespace VetClinic.DataAccess.Migrations
 
                     b.Property<Guid>("ExternalId")
                         .HasColumnType("uuid");
+
+                    b.Property<string>("HashPassword")
+                        .IsRequired()
+                        .HasColumnType("text");
 
                     b.Property<DateTime>("ModificationTime")
                         .HasColumnType("timestamp with time zone");
