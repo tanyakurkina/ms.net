@@ -6,13 +6,17 @@ namespace VetClinic.Service.IoC;
 
 public class DbContextConfigurator
 {
-    public static void ConfigureService(IServiceCollection services, VetClinicSettings settings)
+    public static void ConfigureServices(WebApplicationBuilder builder)
     {
-        services.AddDbContextFactory<VetClinicDbContext>(options =>
-        {
-            options.UseNpgsql(settings.VetClinicDbConnectionString);
-        }, ServiceLifetime.Scoped);
+        var configuration = new ConfigurationBuilder()
+            .AddJsonFile("appsettings.json", optional: false)
+            .Build();
+                
+        string connectionString = configuration.GetValue<string>("ConnectionStrings:FlowersShopDbContext");
 
+        builder.Services.AddDbContextFactory<VetClinicDbContext>(
+            options => { options.UseNpgsql(connectionString); },
+            ServiceLifetime.Scoped);
     }
 
     public static void ConfigureApplication(IApplicationBuilder app)

@@ -1,4 +1,5 @@
 using VetClinic.Service.IoC;
+using VetClinic.Service.DI;
 using VetClinic.Service.Settings;
 
 var configuration = new ConfigurationBuilder()
@@ -8,16 +9,11 @@ var settings = VetClinicSettingsReader.Read(configuration);
 
 var builder = WebApplication.CreateBuilder(args);
 
-DbContextConfigurator.ConfigureService(builder.Services, settings);
-SwaggerConfigurator.ConfigureServices(builder.Services);
-SerilogConfigurator.ConfigureService(builder);
+ApplicationConfigurator.ConfigureServices(builder);
 
 var app = builder.Build();
 
-DbContextConfigurator.ConfigureApplication(app);
-SwaggerConfigurator.ConfigureApplication(app);
-SerilogConfigurator.ConfigureApplication(app);
+ApplicationConfigurator.ConfigureApplication(app);
 
-app.UseHttpsRedirection();
 
 app.Run();

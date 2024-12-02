@@ -8,10 +8,16 @@ public class Repository<T> : IRepository<T> where T : BaseEntity
 {
     private readonly IDbContextFactory<DbContext> _contextFactory;
 
-    public Repository(IDbContextFactory<DbContext> contextFactory) 
-        => _contextFactory = contextFactory;
-    
+    public Repository(IDbContextFactory<DbContext> contextFactory)
+    {
+        _contextFactory = contextFactory;
+    }
 
+    public Repository(IDbContextFactory<VetClinicDbContext> getRequiredService)
+    {
+        throw new NotImplementedException();
+    }
+    
     public IQueryable<T> GetAll()
     {
         using var dbContext = _contextFactory.CreateDbContext();
